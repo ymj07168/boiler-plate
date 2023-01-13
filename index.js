@@ -19,6 +19,6 @@ app.use(cookieParser());
 
 
 app.use('/api/users', require('./routes/users'));
-
+app.use('api/video', require('./routes/video'));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
